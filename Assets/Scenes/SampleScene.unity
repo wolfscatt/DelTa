@@ -622,6 +622,7 @@ GameObject:
   - component: {fileID: 1760172639}
   - component: {fileID: 1760172643}
   - component: {fileID: 1760172642}
+  - component: {fileID: 1760172644}
   - component: {fileID: 1760172641}
   - component: {fileID: 1760172640}
   m_Layer: 0
@@ -777,6 +778,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1760172644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760172637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca5a9395008a124ab5e18eda3a1b900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4680413536793366609, guid: 2b0da83ef19740c45bb7977e511110cb, type: 3}
+  throwPoint: {fileID: 1760172639}
+  throwForce: 10
+  throwKey: 32
+  projectileLifetime: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
