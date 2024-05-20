@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 6765d5de6d924cc41927e1beda975672
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 1
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 33
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638518127948614113
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: dog_animations_Frame_0
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.3809524}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 152
+      width: 29
+      height: 21
+    spriteID: 5ad14282b9bdf914bb199d410a0f8edc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 152}
+  - name: dog_animations_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 4
+      width: 33
+      height: 18
+    spriteID: 9da1e61a7634fc14585a116277200947
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 4}
+  - name: dog_animations_Frame_2
+    originalName: 
+    pivot: {x: 0.4677419, y: -0.47368425}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 56
+      width: 31
+      height: 19
+    spriteID: 97369799f5389be428b3c78e20e43b08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 56}
+  - name: dog_animations_Frame_3
+    originalName: 
+    pivot: {x: 0.48333335, y: -0.3809524}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 4
+      width: 30
+      height: 21
+    spriteID: fe989cd914ca292458b4b1e69b34fb7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 4}
+  - name: dog_animations_Frame_4
+    originalName: 
+    pivot: {x: 0.537037, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 83
+      width: 27
+      height: 20
+    spriteID: dbd81aa724d79b441a576c0c9addbeed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 83}
+  - name: dog_animations_Frame_5
+    originalName: 
+    pivot: {x: 0.51785713, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 209
+      width: 28
+      height: 20
+    spriteID: cc8b3bc4e3ebfaa4d95f18e7315afffe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 209}
+  - name: dog_animations_Frame_6
+    originalName: 
+    pivot: {x: 0.51785713, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 62
+      width: 28
+      height: 22
+    spriteID: 09d90f91058918f4a96ff855f0724eee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 62}
+  - name: dog_animations_Frame_7
+    originalName: 
+    pivot: {x: 0.46, y: -0.3809524}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 138
+      width: 25
+      height: 21
+    spriteID: 08b22e788f52d254381cc2491f55b379
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 138}
+  - name: dog_animations_Frame_8
+    originalName: 
+    pivot: {x: 0.51785713, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 92
+      width: 28
+      height: 22
+    spriteID: 38accb5fdcdaede4289ae60a47c2e75a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 92}
+  - name: dog_animations_Frame_9
+    originalName: 
+    pivot: {x: 0.5344828, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 181
+      width: 29
+      height: 20
+    spriteID: 4f968f5e3fb0b1a4e83007373abf25f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 181}
+  - name: dog_animations_Frame_10
+    originalName: 
+    pivot: {x: 0.55357146, y: -0.3478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 28
+      height: 23
+    spriteID: 0ec83e819b348ff4780e3802ea1ed1f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: dog_animations_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.7222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 30
+      width: 33
+      height: 18
+    spriteID: 7fc94fb82683b8c4192f29a60af6a4e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 30}
+  - name: dog_animations_Frame_12
+    originalName: 
+    pivot: {x: 0.48333335, y: -0.3809524}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 33
+      width: 30
+      height: 21
+    spriteID: 144661f4cb2340942a378fbebcb043da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 33}
+  - name: dog_animations_Frame_13
+    originalName: 
+    pivot: {x: 0.55357146, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 111
+      width: 28
+      height: 19
+    spriteID: 3ae9377b26c0ec243ac8402fb85f53de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 111}
+  - name: dog_animations_Frame_14
+    originalName: 
+    pivot: {x: 0.51785713, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 122
+      width: 28
+      height: 22
+    spriteID: 6cade8861eb1cdb49af8bd20b67377c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 122}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 2023419622
+    name: dog_animations
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: dog_animations_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 29
+        height: 21
+      spriteId: 5ad14282b9bdf914bb199d410a0f8edc
+    - name: dog_animations_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 12
+        width: 33
+        height: 18
+      spriteId: 9da1e61a7634fc14585a116277200947
+    - name: dog_animations_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 9
+        width: 31
+        height: 19
+      spriteId: 97369799f5389be428b3c78e20e43b08
+    - name: dog_animations_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 30
+        height: 21
+      spriteId: fe989cd914ca292458b4b1e69b34fb7a
+    - name: dog_animations_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 27
+        height: 20
+      spriteId: dbd81aa724d79b441a576c0c9addbeed
+    - name: dog_animations_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 28
+        height: 20
+      spriteId: cc8b3bc4e3ebfaa4d95f18e7315afffe
+    - name: dog_animations_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 28
+        height: 22
+      spriteId: 09d90f91058918f4a96ff855f0724eee
+    - name: dog_animations_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 8
+        width: 25
+        height: 21
+      spriteId: 08b22e788f52d254381cc2491f55b379
+    - name: dog_animations_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 28
+        height: 22
+      spriteId: 38accb5fdcdaede4289ae60a47c2e75a
+    - name: dog_animations_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 8
+        width: 29
+        height: 20
+      spriteId: 4f968f5e3fb0b1a4e83007373abf25f6
+    - name: dog_animations_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 8
+        width: 28
+        height: 23
+      spriteId: 0ec83e819b348ff4780e3802ea1ed1f1
+    - name: dog_animations_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 13
+        width: 33
+        height: 18
+      spriteId: 7fc94fb82683b8c4192f29a60af6a4e6
+    - name: dog_animations_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 30
+        height: 21
+      spriteId: 144661f4cb2340942a378fbebcb043da
+    - name: dog_animations_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 8
+        width: 28
+        height: 19
+      spriteId: 3ae9377b26c0ec243ac8402fb85f53de
+    - name: dog_animations_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 8
+        width: 28
+        height: 22
+      spriteId: 6cade8861eb1cdb49af8bd20b67377c4
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 47, y: 35}
