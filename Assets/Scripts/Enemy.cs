@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -26,9 +27,13 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         // Add remaining time of the enemy to the main character's timer
-        mainCharacterTimer.AddTime(mainCharacterTimer.initialTime / 2f); // For example, add half of the initial time
+        mainCharacterTimer.AddTime(mainCharacterTimer.initialTime); 
 
         // Handle enemy death (e.g., play animation, drop loot, etc.)
         Destroy(gameObject); // Destroy the enemy game object
+        if (gameObject.CompareTag("kid"))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
