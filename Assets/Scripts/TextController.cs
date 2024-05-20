@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class NPCTextController : MonoBehaviour
+public class TextController : MonoBehaviour
 {
     public TextMeshProUGUI npcText; // Reference to the TextMeshProUGUI component
 

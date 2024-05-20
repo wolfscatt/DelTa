@@ -77,7 +77,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -90,7 +89,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -432,7 +430,6 @@ ScriptedImporter:
     cells:
     - name: dog_animations_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -441,7 +438,6 @@ ScriptedImporter:
       spriteId: 5ad14282b9bdf914bb199d410a0f8edc
     - name: dog_animations_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 7
         y: 12
@@ -450,7 +446,6 @@ ScriptedImporter:
       spriteId: 9da1e61a7634fc14585a116277200947
     - name: dog_animations_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 9
@@ -459,7 +454,6 @@ ScriptedImporter:
       spriteId: 97369799f5389be428b3c78e20e43b08
     - name: dog_animations_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -468,7 +462,6 @@ ScriptedImporter:
       spriteId: fe989cd914ca292458b4b1e69b34fb7a
     - name: dog_animations_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -477,7 +470,6 @@ ScriptedImporter:
       spriteId: dbd81aa724d79b441a576c0c9addbeed
     - name: dog_animations_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -486,7 +478,6 @@ ScriptedImporter:
       spriteId: cc8b3bc4e3ebfaa4d95f18e7315afffe
     - name: dog_animations_Frame_6
       frameIndex: 6
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -495,7 +486,6 @@ ScriptedImporter:
       spriteId: 09d90f91058918f4a96ff855f0724eee
     - name: dog_animations_Frame_7
       frameIndex: 7
-      additiveSortOrder: 0
       cellRect:
         x: 12
         y: 8
@@ -504,7 +494,6 @@ ScriptedImporter:
       spriteId: 08b22e788f52d254381cc2491f55b379
     - name: dog_animations_Frame_8
       frameIndex: 8
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -513,7 +502,6 @@ ScriptedImporter:
       spriteId: 38accb5fdcdaede4289ae60a47c2e75a
     - name: dog_animations_Frame_9
       frameIndex: 9
-      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 8
@@ -522,7 +510,6 @@ ScriptedImporter:
       spriteId: 4f968f5e3fb0b1a4e83007373abf25f6
     - name: dog_animations_Frame_10
       frameIndex: 10
-      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 8
@@ -531,7 +518,6 @@ ScriptedImporter:
       spriteId: 0ec83e819b348ff4780e3802ea1ed1f1
     - name: dog_animations_Frame_11
       frameIndex: 11
-      additiveSortOrder: 0
       cellRect:
         x: 7
         y: 13
@@ -540,7 +526,6 @@ ScriptedImporter:
       spriteId: 7fc94fb82683b8c4192f29a60af6a4e6
     - name: dog_animations_Frame_12
       frameIndex: 12
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -549,7 +534,6 @@ ScriptedImporter:
       spriteId: 144661f4cb2340942a378fbebcb043da
     - name: dog_animations_Frame_13
       frameIndex: 13
-      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 8
@@ -558,7 +542,6 @@ ScriptedImporter:
       spriteId: 3ae9377b26c0ec243ac8402fb85f53de
     - name: dog_animations_Frame_14
       frameIndex: 14
-      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 8
@@ -592,7 +575,6 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 47, y: 35}

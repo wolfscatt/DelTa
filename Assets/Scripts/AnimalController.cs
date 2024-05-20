@@ -1,35 +1,89 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Net.Http;
-using System.Text;
 using UnityEngine;
-using UnityEngine.Networking;
 
-public class AnimalController : MonoBehaviour
+public class AnimalFollower : MonoBehaviour
 {
-    public Transform player; // Takip edilecek karakterin Transform'u
-    public float followDistance = 1f; // Karakterin arkasında kalınacak mesafe
-    public float moveSpeed = 5f; // Evcil hayvanın hareket hızı
+    public GameObject character;
+    public float followDistance = 2.0f;
+    public float speed = 2.0f;
+    public float jumpForce = 7;
+
+    private Rigidbody2D rb;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
+    private bool jump;
+    private bool grounded = true;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        Collider2D characterCollider = character.GetComponent<Collider2D>();
+        if (characterCollider != null)
+        {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), characterCollider);
+        }
+    }
 
     void FixedUpdate()
     {
-       // Karakterin pozisyonu ile evcil hayvanın pozisyonu arasındaki mesafeyi hesapla
-        float distance = Vector2.Distance(player.position, transform.position);
+        FollowCharacter();
 
-        // Eğer karaktere belirli bir mesafeden daha uzaktaysa evcil hayvanı hareket ettir
-        if (distance > followDistance)
+        if (jump)
         {
-            // Karakterin pozisyonuna doğru yön vektörünü hesapla
-            Vector2 direction = (player.position - transform.position).normalized;
-
-            // Yeni pozisyonu hesapla
-            Vector2 newPosition = (Vector2)transform.position + direction * moveSpeed * Time.deltaTime;
-
-            // Evcil hayvanı yeni pozisyona taşı
-            transform.position = newPosition;
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jump = false;
+            grounded = false;
+            animator.SetTrigger("jump");
         }
     }
-    
- 
-}
 
+    void Update()
+    {
+        if (character != null)
+        {
+            CharacterController characterController = character.GetComponent<CharacterController>();
+
+            if (grounded && characterController.verticalInput > 0 && characterController.grounded)
+            {
+                jump = true;
+            }
+        }
+
+        animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
+        animator.SetBool("grounded", grounded);
+        animator.SetBool("jump", jump);
+    }
+
+    private void FollowCharacter()
+    {
+        if (character != null)
+        {
+            float distanceToCharacter = Vector2.Distance(transform.position, character.transform.position);
+
+            if (distanceToCharacter > followDistance)
+            {
+                Vector3 direction = (character.transform.position - transform.position).normalized;
+                rb.velocity = new Vector2(direction.x * speed, rb.velocity.y);
+
+                spriteRenderer.flipX = direction.x < 0;
+            }
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            grounded = true;
+        }
+    }
+}
