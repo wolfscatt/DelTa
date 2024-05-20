@@ -6,7 +6,8 @@ public class AnimalController : MonoBehaviour
 {
     public GameObject character;
     public float followDistance = 2.0f;
-    public float speed = 2.0f;
+    public float respawnDistance = 10f;
+    public float speed = 5.0f;
     public float jumpForce = 7;
 
     private Rigidbody2D rb;
@@ -44,6 +45,7 @@ public class AnimalController : MonoBehaviour
 
     void Update()
     {
+        float distanceToCharacter = Vector2.Distance(transform.position, character.transform.position);
         if (character != null)
         {
             CharacterController characterController = character.GetComponent<CharacterController>();
@@ -52,6 +54,11 @@ public class AnimalController : MonoBehaviour
             {
                 jump = true;
             }
+        }
+
+        if(distanceToCharacter > respawnDistance)
+        {
+            transform.position = new Vector3(character.transform.position.x - 1, character.transform.position.y, transform.position.z);
         }
 
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
