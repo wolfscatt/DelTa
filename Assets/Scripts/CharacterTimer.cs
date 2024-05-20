@@ -40,5 +40,9 @@ public class CharacterTimer : MonoBehaviour
     {
         remainingTime += additionalTime;
     }
+    public void DecreaseTime(float decreaseTime)
+    {
+        remainingTime -= decreaseTime;
+    }
 
 }
