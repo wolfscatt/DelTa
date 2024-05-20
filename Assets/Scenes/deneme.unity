@@ -397,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1760172637}
   followDistance: 1
+  respawnDistance: 10
   speed: 2
   jumpForce: 7
 --- !u!61 &426680961
@@ -4140,7 +4141,7 @@ GameObject:
   - component: {fileID: 1587696176}
   - component: {fileID: 1587696180}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UiCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
