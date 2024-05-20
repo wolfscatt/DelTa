@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CharacterTimer : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class CharacterTimer : MonoBehaviour
             remainingTime -= 2 * Time.deltaTime; // Decrease time by the elapsed time since the last frame
             if (remainingTime < 0) remainingTime = 0; // Ensure it doesn't go negative
             UpdateTimerText();
+        }
+        if (remainingTime <= 0)
+        {
+            SceneManager.LoadScene("GameOver"); // Load the GameOver scene when the time runs out
         }
     }
 

@@ -20,9 +20,12 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private GameObject cam;
     [SerializeField] private Collider2D animalCollider; // Reference to the animal's collider
 
+    private CharacterTimer characterTimer;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        characterTimer = GetComponent<CharacterTimer>();
     }
 
     void Start()
@@ -83,6 +86,10 @@ public class CharacterController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             grounded = true;
+        }
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            characterTimer.DecreaseTime(characterTimer.initialTime / 3); 
         }
     }
 }
