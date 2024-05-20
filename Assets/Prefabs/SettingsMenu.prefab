@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 469866250972298768}
   - component: {fileID: 4013826723525494728}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BackToGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,7 +601,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 469866250972298768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 219810399137167480}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: BackToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1213087088694506229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1715,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Y\xDCKSEK"
+  m_text: "D\xDC\u015E\xDCK"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1784,13 +1796,14 @@ GameObject:
   - component: {fileID: 1164202976920888715}
   - component: {fileID: 1882911001433414584}
   - component: {fileID: 4054938819703528929}
+  - component: {fileID: 219810399137167480}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2875863524371877855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1874,6 +1887,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &219810399137167480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905701561956265090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2c7e728624ec84f94ab444eefd6cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playCanvas: {fileID: 0}
+  settingsMenu: {fileID: 4905701561956265090}
+  backToGameButton: {fileID: 1178376161246430182}
 --- !u!1 &5390924501221645534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,7 +2242,7 @@ GameObject:
   - component: {fileID: 177344221598328198}
   - component: {fileID: 9129618760474438158}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2321,7 +2349,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 177344221598328198}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 219810399137167480}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6513916423389596810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,15 +2566,27 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "Y\xDCKSEK"
+    - m_Text: "D\xDC\u015E\xDCK"
       m_Image: {fileID: 0}
     - m_Text: ORTA
       m_Image: {fileID: 0}
-    - m_Text: "D\xDC\u015E\xDCK"
+    - m_Text: "Y\xDCKSEK"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 219810399137167480}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: SetQuality
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!1 &6936628213791541430
 GameObject:

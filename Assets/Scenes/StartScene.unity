@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsMenu: {fileID: 1641598872}
+  playCanvas: {fileID: 234227470}
   soundButton: {fileID: 2113997123}
   mutedSoundButton: {fileID: 184391507}
 --- !u!1 &523907878
@@ -1031,6 +1032,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 219810399137167480, guid: 0b301d427cd71de4fbe7b80bff38029a, type: 3}
+      propertyPath: playCanvas
+      value: 
+      objectReference: {fileID: 234227470}
     - target: {fileID: 2875863524371877855, guid: 0b301d427cd71de4fbe7b80bff38029a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1114,10 +1119,6 @@ PrefabInstance:
     - target: {fileID: 4905701561956265090, guid: 0b301d427cd71de4fbe7b80bff38029a, type: 3}
       propertyPath: m_Name
       value: SettingsMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905701561956265090, guid: 0b301d427cd71de4fbe7b80bff38029a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

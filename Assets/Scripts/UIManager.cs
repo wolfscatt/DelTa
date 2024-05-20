@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject settingsMenu;
+    [SerializeField] private GameObject playCanvas;
     [SerializeField] private GameObject soundButton;
     [SerializeField] private GameObject mutedSoundButton;
-    private bool isActivetedSettings = false;
     private bool isMuted = false;
     void Start()
     {
@@ -27,8 +27,9 @@ public class UIManager : MonoBehaviour
     }
     public void SettingsMenu()
     {
-        isActivetedSettings = !isActivetedSettings;
-        settingsMenu.SetActive(isActivetedSettings);
+        settingsMenu.SetActive(true);
+        playCanvas.SetActive(false);
+        Debug.Log("works");
     }
     public void SoundButton()
     {
