@@ -17,7 +17,7 @@ public class CharacterTimer : MonoBehaviour
     {
         if (remainingTime > 0)
         {
-            remainingTime -= 2*Time.deltaTime; // Decrease time by the elapsed time since the last frame
+            remainingTime -= 2 * Time.deltaTime; // Decrease time by the elapsed time since the last frame
             if (remainingTime < 0) remainingTime = 0; // Ensure it doesn't go negative
             UpdateTimerText();
         }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimalFollower : MonoBehaviour
+public class AnimalController : MonoBehaviour
 {
     public GameObject character;
     public float followDistance = 2.0f;

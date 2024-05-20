@@ -10,19 +10,29 @@ public class CharacterThrower : MonoBehaviour
     public KeyCode throwKey = KeyCode.Space; // Fırlatma tuşu (örneğin, Boşluk tuşu)
     public float projectileLifetime = 3f;
     private Vector2 lastMoveDirection;
+    private Animator animator;
 
-    private void Start() 
+    private void Start()
     {
+    }
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+        if (animator == null)
+        {
+            Debug.LogError("Animator component not found!");
+        }
     }
 
     void Update()
     {
-
         UpdateMoveDirection();
 
         // Fırlatma tuşuna basıldığında projectile fırlat
         if (Input.GetKeyDown(throwKey))
         {
+            Debug.Log("Throw key pressed");
             ThrowProjectile();
         }
     }
@@ -35,14 +45,27 @@ public class CharacterThrower : MonoBehaviour
             lastMoveDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         }
     }
+
     void ThrowProjectile()
     {
         // Projectile prefab'ini instantiate et
         GameObject projectile = Instantiate(projectilePrefab, throwPoint.position, throwPoint.rotation);
 
+        // Log to ensure throw is happening
+        Debug.Log("Throwing projectile");
+        animator.SetTrigger("throw");
+        Debug.Log("Throw animation triggered");
+
         // Projectile'ye bir kuvvet uygula
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.AddForce(lastMoveDirection  * throwForce, ForceMode2D.Impulse);
+        if (rb != null)
+        {
+            rb.AddForce(lastMoveDirection * throwForce, ForceMode2D.Impulse);
+        }
+        else
+        {
+            Debug.LogError("Rigidbody2D component not found on projectile!");
+        }
 
         Destroy(projectile, projectileLifetime);
     }

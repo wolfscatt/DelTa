@@ -70,13 +70,13 @@ public class CharacterController : MonoBehaviour
         animator.SetBool("jump", jump);
     }
 
-    private void LateUpdate()
-    {
-        if (cam != null)
-            cam.transform.position = new Vector3(charPos.x, charPos.y, -10);
-        else
-            Debug.Log("Camera is not assigned.");
-    }
+    //private void LateUpdate()
+    //{
+    //    if (cam != null)
+    //        cam.transform.position = new Vector3(charPos.x, charPos.y, -10);
+    //    else
+    //        Debug.Log("Camera is not assigned.");
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
