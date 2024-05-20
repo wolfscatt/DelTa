@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class fallDie : MonoBehaviour
+public class FallDie : MonoBehaviour
 {
     Scene _scene;
  
@@ -12,8 +12,14 @@ public class fallDie : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            score.lives--;
-            SceneManager.LoadScene("GameOver");;
+            Score.lives--;
+            if(Score.lives == 0)
+                SceneManager.LoadScene("GameOver");
+            else
+            {
+                _scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(_scene.name);
+            }
         }
     }
 }
